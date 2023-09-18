@@ -14,7 +14,7 @@
     
 </header>
 <main>
-<section class="pantallaUno">
+<section class="pantallaUno" id="pantallaUno">
     <h1>Bienvenido a TareaAPP!!</h1>
     <h4>🤖</h4>
     <h3>"Pulsa en el boton de abajo para agregar"</h3>
@@ -26,13 +26,15 @@
 
 
 <!--Segunda pantalla-->
-<section class="opciones" >
+<section class="opciones" id="opciones" >
 
     <h3>Ingresa la tarea a realizar</h3>
     <input type="text" placeholder="Nombre tarea" id="tarea">
-    <h3>Selecciona una imagen</h3>
+    <button id="imagenes">
+        <span>Selecciona una imagen</span>
+    </button>
     <div id="imagenes">
-        <div class="img">
+        <div class="img" id="img">
             <img src="./imagenes/1542384053_864693_1542384302_noticia_normal.jpg" alt="">
             <img src="./imagenes/450_1000.jpg" alt="">
             <img src="./imagenes/5790a3d9421b128613dc2f053ee657e3.jpg" alt="">
@@ -54,7 +56,6 @@
         <option value="">6 dias</option>
         <option value="">7 dias</option>
     </select>   
-        <button>add</button>
     </div>
 </section>
 
