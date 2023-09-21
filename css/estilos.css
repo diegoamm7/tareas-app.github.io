@@ -99,7 +99,6 @@ footer a{
     justify-content: center;
     align-items: center;
     display: none;
-<<<<<<< HEAD
     & img {
         width: 66px;
         height: 65px;
@@ -107,8 +106,6 @@ footer a{
         padding: 5px;
         cursor: pointer;
     }
-=======
->>>>>>> de9a2d6eb31e0d8cdeb801a88651240fc402187e
 }
 .seleccionado{
     border: 1px solid #999;

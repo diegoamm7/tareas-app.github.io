@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let pantallaUno = document.getElementById("pantallaUno")
 let btn = document.getElementById("btn")
 let pantallaDos = document.getElementById("opciones")
