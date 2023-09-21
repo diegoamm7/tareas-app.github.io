@@ -14,7 +14,7 @@
     
 </header>
 <main>
-<section class="pantallaUno">
+<section class="pantallaUno" id="pantallaUno">
     <h1>Bienvenido a TareaAPP!!</h1>
     <h4>🤖</h4>
     <h3>"Pulsa en el boton de abajo para agregar"</h3>
@@ -26,40 +26,52 @@
 
 
 <!--Segunda pantalla-->
-<section class="opciones" >
-
+<section class="opciones" id="opciones" >
+    <form id="form">
     <h3>Ingresa la tarea a realizar</h3>
     <input type="text" placeholder="Nombre tarea" id="tarea">
-    <h3>Selecciona una imagen</h3>
+    <h3 id="imagenes">
+        <span>Selecciona una imagen</span>
+    </h3>
     <div id="imagenes">
-        <div class="img">
-            <img src="./imagenes/1542384053_864693_1542384302_noticia_normal.jpg" alt="">
-            <img src="./imagenes/450_1000.jpg" alt="">
-            <img src="./imagenes/5790a3d9421b128613dc2f053ee657e3.jpg" alt="">
-            <img src="./imagenes/60ae5c9db9f42.jpeg" alt="">
-            <img src="./imagenes/Captura de pantalla 2023-09-02 202719.png" alt="">
-            <img src="./imagenes/gato_png_crop1567201738546-jpg_673822677-1.jpg" alt="">
-            <img src="./imagenes/Captura de pantalla 2023-09-02 212814.png" alt="">
-            <img src="./imagenes/Captura de pantalla 2023-09-02 212921.png" alt="">
+        <div class="img" id="imgen">
+            <img src="./imagenes/1542384053_864693_1542384302_noticia_normal.jpg" alt="imagen uno">
+            <img src="./imagenes/450_1000.jpg" alt="imagen dos">
+            <img src="./imagenes/5790a3d9421b128613dc2f053ee657e3.jpg" alt="imagen tres">
+            <img src="./imagenes/60ae5c9db9f42.jpeg" alt="imagen cuatro">
+            <img src="./imagenes/Captura de pantalla 2023-09-02 202719.png" alt="imagen cinco">
+            <img src="./imagenes/gato_png_crop1567201738546-jpg_673822677-1.jpg" alt="imagen seis">
+            <img src="./imagenes/Captura de pantalla 2023-09-02 212814.png" alt="imagen siete">
+            <img src="./imagenes/Captura de pantalla 2023-09-02 212921.png" alt="imagen ocho">
         </div>
     </div>
         <h3>Elija tiempo a realizar la tarea</h3>
         <div id="seleccion">
-    <select name="" id="">
-        <option value="">1 dia</option>
-        <option value="">2 dias</option>
-        <option value="">3 dias</option>
-        <option value="">4 dias</option>
-        <option value="">5 dias</option>
-        <option value="">6 dias</option>
-        <option value="">7 dias</option>
+    <select name="time" id="time">
+        <option value="1">1 dia</option>
+        <option value="2">2 dias</option>
+        <option value="3">3 dias</option>
+        <option value="4">4 dias</option>
+        <option value="5">5 dias</option>
+        <option value="6">6 dias</option>
+        <option value="7">7 dias</option>
     </select>   
-        <button>add</button>
     </div>
+    
+    <button type="submit" id="agregar">Agregar</button>
+</form>
 </section>
 
 
-
+<section class="listado-holder">
+    <ul class="listado">
+        <li class="card">
+            <h2>titulo</h2>
+            <div>img</div>
+            <div>tiempo</div>
+        </li>
+    </ul>
+</section>
 
 
 
@@ -72,3 +84,6 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+
+

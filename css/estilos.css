@@ -20,7 +20,6 @@ header{
     align-content: center;
     justify-content: flex-end;
     height: 400px;
-    display: none;
 
 }
 .pantallaUno h1{
@@ -78,6 +77,7 @@ footer a{
     align-content: center;
     justify-content: flex-end;
     height: 480px;
+    display: none;
 }
 #imagenes{
     width: 300px;
@@ -98,13 +98,18 @@ footer a{
     align-content: center;
     justify-content: center;
     align-items: center;
+    display: none;
+    & img {
+        width: 66px;
+        height: 65px;
+        margin: 5px;
+        padding: 5px;
+        cursor: pointer;
+    }
 }
-
-#imagenes .img img{
-    width: 66px;
-    height: 65px;
-    margin: 5px;
-    padding: 5px;
+.seleccionado{
+    border: 1px solid #999;
+    border-radius:8px;
 }
 
 #seleccion{
@@ -114,4 +119,19 @@ footer a{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+}
+.listado-holder{
+    margin-top: 32px;
+    padding: 16px;
+    border: 1px solid #333;
+    border-radius: 16px;
+    & ul {
+        display: flex;
+        gap: 8px;
+    }
+}
+.card{
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 16px;
 }
