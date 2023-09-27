@@ -28,7 +28,8 @@ const libros = []
 const form = document.getElementById('form')
 let seleccionado = []
 const listaGen = document.querySelectorAll('#imgen img')
-
+const imgSeleccionada = document.querySelector('#imgSeleccionada')
+const imagenes = document.querySelector('#imagenes')
 // recorremos el div de las imagenes para capturar la informacion con el click
 
 listaGen.forEach((img) =>{
@@ -45,6 +46,13 @@ listaGen.forEach((img) =>{
     })
     // se agrega la clase seleccionado
     img.classList.add('seleccionado')
+    console.log('selecImg:', selecImg);
+    console.log('selectText:', selectText);
+    imgSeleccionada.src = selecImg;
+    imgSeleccionada.alt = selectText;
+    imgSeleccionada.classList.remove('d-none');
+
+
 
     seleccionado = [selecImg, selectText]
     })
@@ -66,6 +74,13 @@ form.addEventListener('submit', (e) =>{
     libros.push(libro)
     console.log(libros)
 
+ // resetear todo el formulario
+    imagenes.classList.add('d-none')
+ // quitar la seleccion de la imagen
+    listaGen.forEach((img) =>{
+    img.classList.remove('seleccionado')
+    
+    })
     form.reset( )
 })
 
@@ -96,3 +111,24 @@ form.addEventListener('submit', (e) =>{
 //})
 
 
+
+
+
+
+
+
+
+
+
+
+
+//
+//img.addEventListener('click', (e) =>{
+  //  seleccionada = e.target.src
+//})
+
+//btn.addEventListener('click', () =>{
+  //  let agregar = `<div class="img"><h3>"pepe"</h3><img src="${seleccionada}" alt=""></div>`
+    //tareasSection.innerHTML+= agregar
+    
+//})

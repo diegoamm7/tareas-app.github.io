@@ -9,6 +9,9 @@ body{
     min-height: 100vh;
     flex-direction: column;
 }
+.d-none{
+    display: none;
+}
 header{
     background-color: #333;
     height: 70px;
@@ -134,4 +137,10 @@ footer a{
     border-radius: 8px;
     border: 1px solid #333;
     padding: 16px;
+}
+.img-seleccionada{
+    width: 66px;
+    height: 65px;
+    margin: 5px;
+    padding: 5px;
 }
