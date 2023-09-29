@@ -144,3 +144,30 @@ footer a{
     margin: 5px;
     padding: 5px;
 }
+.listado {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+    & li{
+        list-style: none;
+        margin: 10px;
+    
+    }
+    & img {
+        width: 66px;
+        height: 65px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+.bg-red{
+    background-color: rgb(145, 48, 48);
+}
+.bg-amarillo{
+    background-color: rgb(175, 183, 25);
+}
+.bg-verde{
+    background-color: rgb(4, 69, 35);
+}
