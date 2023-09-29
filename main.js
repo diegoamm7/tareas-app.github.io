@@ -123,11 +123,11 @@ form.addEventListener('submit', (e) =>{
             let tiempo = timeLeft(libro.time)
             // color de las tareas
             let bg = ''
-            if (tiempo < 2) {
+            if (tiempo <= 2) {
                 bg = 'bg-red'
-            } else if (tiempo < 5){
+            } else if (tiempo <= 5){
                 bg = 'bg-amarillo'
-            }else if (tiempo < 7){
+            }else if (tiempo <= 7){
                 bg = 'bg-verde'
             }
             listado.innerHTML +=  
