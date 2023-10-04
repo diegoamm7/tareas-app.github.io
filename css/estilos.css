@@ -144,6 +144,9 @@ footer a{
     margin: 5px;
     padding: 5px;
 }
+.listado-holder{
+    display: none;
+}
 .listado {
     display: flex;
     flex-wrap: wrap;
@@ -161,6 +164,7 @@ footer a{
         margin: 5px;
         padding: 5px;
     }
+
 }
 .bg-red{
     background-color: rgb(145, 48, 48);

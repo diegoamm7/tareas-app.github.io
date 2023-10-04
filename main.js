@@ -14,13 +14,16 @@ let seleccionado = []
 const listaGen = document.querySelectorAll('#imgen img')
 const imgSeleccionada = document.querySelector('#imgSeleccionada')
 const imagenes = document.querySelector('#imagenes')
+const listadoHolder = document.querySelector('.listado-holder')
 const listado = document.querySelector('.listado')
+const listTarea = document.querySelector('#listTarea')
 
 // ocultar primera pantalla para agregar tareas luego de clikear el boton
 
 btn.addEventListener('click', () => {
     pantallaUno.style.display = "none";
     pantallaDos.style.display ="flex";
+    listadoHolder.style.display ="none";
 });
 
 //mostrar imagenes para seleccionar: 
@@ -151,57 +154,26 @@ form.addEventListener('submit', (e) =>{
         localStorage.setItem('libros', JSON.stringify(libros))
 
         // llamamos a la funcion para actualizar y cargar los cambios
-        getLibros()
+       
     }
 
+// ocultar primera pantalla para agregar tareas luego de clikear el boton
+getLibros()
 
+agregar.addEventListener('click', () => {
+    pantallaDos.style.display = "none";
+    listadoHolder.style.display ="flex";
+});
+
+listTarea.addEventListener('click', () => {
+    pantallaUno.style.display = "none";
+    pantallaDos.style.display ="none";
+    listadoHolder.style.display ="flex";
+});
     // ejecutar la funcion para que inicie con la informacion, si es que la tiene, en el localStorage
-    getLibros()
+     getLibros()
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-//
-//img.addEventListener('click', (e) =>{
-  //  seleccionada = e.target.src
-//})
-
-//btn.addEventListener('click', () =>{
-  //  let agregar = `<div class="img"><h3>"pepe"</h3><img src="${seleccionada}" alt=""></div>`
-    //tareasSection.innerHTML+= agregar
-    
-//})
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//img.addEventListener('click', (e) =>{
-  //  seleccionada = e.target.src
-//})
-
-//btn.addEventListener('click', () =>{
-  //  let agregar = `<div class="img"><h3>"pepe"</h3><img src="${seleccionada}" alt=""></div>`
-    //tareasSection.innerHTML+= agregar
-    
-//})
