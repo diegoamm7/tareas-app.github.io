@@ -13,7 +13,7 @@ body{
     display: none;
 }
 header{
-    background-color: #333;
+    background-color: #296073;
     height: 70px;
 }
 .pantallaUno{
@@ -25,6 +25,7 @@ header{
     height: 400px;
 
 }
+
 .pantallaUno h1{
     margin-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,6 +42,51 @@ header{
     font-weight: 600;
     font-size: 15px;
     
+}
+#agregar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#agregar:hover {
+    background-color: #559457;
+}
+#tarea{
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+}
+#btnImg{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5FD1BD;
+    padding: 10px;
+    width: 210px;
+    & span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+#listTarea{
+    background-color: #717AAE;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#time{
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #D4EAE2;
 }
 
 #btn{
@@ -65,7 +111,7 @@ footer{
     text-align: center;
     padding: 20px;
     margin-top: auto;
-    background: #333;
+    background: #296073;
     
 }
 footer a{
@@ -75,16 +121,25 @@ footer a{
 
 .opciones{
     display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-end;
-    height: 480px;
+    min-height: 70vh;
+    align-items: center;
     display: none;
+}
+#from{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 #imagenes{
     width: 300px;
-    background: red;
+    background: #309A9B;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -92,6 +147,7 @@ footer a{
     justify-content: flex-start;
     align-items: center;
     margin: 10px;
+    border-radius: 5px;
 }
 .img{
     display: flex;
@@ -108,11 +164,16 @@ footer a{
         margin: 5px;
         padding: 5px;
         cursor: pointer;
+        border-radius: 20px;
     }
 }
 .seleccionado{
-    border: 1px solid #999;
+    border: 3px solid #8A1D00;
     border-radius:8px;
+    
+}
+#imgSeleccionada{
+    border-radius: 20px;
 }
 
 #seleccion{
@@ -124,9 +185,14 @@ footer a{
     align-items: center;
 }
 .listado-holder{
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 32px;
     padding: 16px;
-    border: 1px solid #333;
     border-radius: 16px;
     & ul {
         display: flex;
@@ -135,8 +201,10 @@ footer a{
 }
 .card{
     border-radius: 8px;
-    border: 1px solid #333;
     padding: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .img-seleccionada{
     width: 66px;
@@ -153,19 +221,24 @@ footer a{
     align-content: center;
     justify-content: center;
     align-items: center; 
-    & li{
-        list-style: none;
-        margin: 10px;
-    
+    & li {
+        display: flex;
+    list-style: none;
+    margin: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
     }
     & img {
         width: 66px;
         height: 65px;
         margin: 5px;
         padding: 5px;
+        border-radius: 20px;
     }
-
+  
 }
+
 .bg-red{
     background-color: rgb(145, 48, 48);
 }

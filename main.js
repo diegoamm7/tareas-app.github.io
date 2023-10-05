@@ -1,5 +1,6 @@
 let pantallaUno = document.getElementById("pantallaUno")
 let btn = document.getElementById("btn")
+let agregar = document.getElementById("agregar")
 let pantallaDos = document.getElementById("opciones")
 let btnImg = document.getElementById("btnImg")
 let img = document.getElementById("imgen")
@@ -154,13 +155,14 @@ form.addEventListener('submit', (e) =>{
         localStorage.setItem('libros', JSON.stringify(libros))
 
         // llamamos a la funcion para actualizar y cargar los cambios
-       
+        getLibros()
     }
 
 // ocultar primera pantalla para agregar tareas luego de clikear el boton
 getLibros()
 
 agregar.addEventListener('click', () => {
+    
     pantallaDos.style.display = "none";
     listadoHolder.style.display ="flex";
 });
@@ -170,8 +172,7 @@ listTarea.addEventListener('click', () => {
     pantallaDos.style.display ="none";
     listadoHolder.style.display ="flex";
 });
-    // ejecutar la funcion para que inicie con la informacion, si es que la tiene, en el localStorage
-     getLibros()
+    
 
 
 
